@@ -1,36 +1,12 @@
 #include <stdio.h>
+int plus(int number1, int number2);
+int minus(int number1, int number2);
+int times(int number1, int number2);
+double divided(int number1, int number2);
 
 typedef struct{
     int number1, number2, operation;
 } Calculadora;
-
-int plus(int number1, int number2){
-    int result;
-    result = number1 + number2;
-    return result;
-}
-
-int minus(int number1, int number2){
-    int result;
-    result = number1 - number2;
-    return result;
-}
-
-int times(int number1, int number2){
-    int result;
-    result = number1 * number2;
-    return result;
-}
-
-double divided(int number1, int number2){
-    double result;
-    if(number2 == 0) printf("Não é possível fazer uma divisão pelo número 0.");
-    else result = number1 / number2;
-    
-    return result;
-    
-
-}
 
 int main(){
     Calculadora calc;
@@ -73,4 +49,32 @@ int main(){
     } while (calc.operation != 0);
     
     
+}
+
+int plus(int number1, int number2){
+    int result;
+    result = number1 + number2;
+    return result;
+}
+
+int minus(int number1, int number2){
+    int result;
+    result = number1 - number2;
+    return result;
+}
+
+int times(int number1, int number2){
+    int result;
+    result = number1 * number2;
+    return result;
+}
+
+double divided(int number1, int number2){
+    double result;
+    if(number2 == 0) printf("Não é possível fazer uma divisão pelo número 0.");
+    else result = number1 / number2;
+    
+    return result;
+    
+
 }
