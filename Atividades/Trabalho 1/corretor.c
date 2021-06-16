@@ -50,9 +50,9 @@ void testSomar(){
 }
 
 void testFatorial(){
-    printf("%d\n", fatorial(3) == 6);
-    printf("%d\n", fatorial(1) == 1);
-    printf("%d\n", fatorial(5) == 120);
+    printf("%d\n", factorial(3) == 6);
+    printf("%d\n", factorial(1) == 1);
+    printf("%d\n", factorial(5) == 120);
 }
 
 void testQ1(){

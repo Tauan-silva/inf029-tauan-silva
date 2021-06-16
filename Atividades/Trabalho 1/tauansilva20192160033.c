@@ -53,7 +53,7 @@ int somar(int x, int y)
 @saida
     fatorial de x -> x!
  */
-int fatorial(int x)
+int factorial(int x)
 { //função utilizada para testes
     int fat = 1;
     if(x == 0 || x == 1)

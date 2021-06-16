@@ -22,7 +22,7 @@
 // #################################################
 
 int somar(int x, int y); 
-int fatorial(int x); 
+int factorial(int x); 
 int q1(char *data);
 int q2(char *datainicial, char *datafinal, int *qtdDias, int *qtdMeses, int *qtdAnos);
 int q3(char *texto, char c, int isCaseSensitive);
