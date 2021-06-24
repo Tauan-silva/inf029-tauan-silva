@@ -6,7 +6,7 @@
 
 int vetorPrincipal[TAM];
 
-void duplicate(int *x)
+void dobrar(int *x)
 {
 
     *x = *x * 2;
@@ -21,7 +21,7 @@ Rertono (int)
     NO_MEMORY_SPACE - Sem espaço de memória
     INVALIDATE_SIZE - o tamanho tem inteiro maior ou igual a 1
 */
-int setAuxiliaryStructure(int position, int size)
+int criarEstruturaAuxiliar(int position, int size)
 {
 
     //int retorno = 0;
@@ -75,7 +75,7 @@ Rertono (int)
     INVALIDATE_POSITION - Posição inválida para estrutura auxiliar
 CONSTANTES
 */
-int insertnumberInStructure(int position, int value)
+int inserirNumeroEmEstrutura(int position, int value)
 {
 
   int functionReturn = 0;
@@ -116,7 +116,7 @@ Rertono (int)
     WITHOUT_AUXILIARY_STRUCTURE - Não tem estrutura auxiliar
     INVALIDATE_POSITION - Posição inválida para estrutura auxiliar
 */
-int deleteNumberOfEndStructure(int position)
+int excluirNumeroDoFinaldaEstrutura(int position)
 {
   int functionReturn = 0;
   int response, valid;
@@ -163,7 +163,7 @@ Rertono (int)
     ABSENT_NUMBER - Número não existe
     INVALIDATE_POSITION - Posição inválida para estrutura auxiliar
 */
-int deleteNumberToStructure(int position, int value)
+int excluirNumeroEspecificoDeEstrutura(int position, int value)
 {
    int a, b, functionReturn = 0;
    int response, valid;
@@ -225,7 +225,7 @@ Retorno (int)
     WITHOUT_AUXILIARY_STRUCTURE - Não tem estrutura auxiliar
     INVALIDATE_POSITION - Posição inválida para estrutura auxiliar
 */
-int getDataAuxiliaryStructure(int position, int vetorAux[])
+int getDadosEstruturaAuxiliar(int position, int vetorAux[])
 {
 
     int a, functionReturn = 0;
@@ -262,7 +262,7 @@ Rertono (int)
     WITHOUT_AUXILIARY_STRUCTURE - Não tem estrutura auxiliar
     INVALIDATE_POSITION - Posição inválida para estrutura auxiliar
 */
-int getOrderDataOfAuxiliaryStructure(int position, int vetorAux[])
+int getDadosOrdenadosEstruturaAuxiliar(int position, int vetorAux[])
 {
  int index, b, functionReturn = 0, resultado;
 	
@@ -312,7 +312,7 @@ void order(int vetorAux[], int position){
 
 
 
-int getDataOfAllAuxiliaryStructures(int vetorAux[])
+int getDadosDeTodasEstruturasAuxiliares(int vetorAux[])
 {
 
    int index, b, functionReturn = 0, result;
@@ -341,7 +341,7 @@ Rertono (int)
     SUCESS - recuperado com sucesso os valores da estrutura na posição 'posicao'
     WITHOUT_AUXILIARY_STRUCTURE - Não tem estrutura auxiliar
 */
-int getOrderDataOfAllAuxiliaryStructures(int vetorAux[])
+int getDadosOrdenadosDeTodasEstruturasAuxiliares(int vetorAux[])
 {
 int index, b, functionReturn = 0, result;
 	
@@ -370,7 +370,7 @@ Rertono (int)
     NEW_INVALIDATE_SIZE - novo tamanho não pode ser negativo
     NO_MEMORY_SPACE - erro na alocação do novo valor
 */
-int changeSizeAuxiliaryStructure(int position, int newSize)
+int modificarTamanhoEstruturaAuxiliar(int position, int newSize)
 {
 
   int functionReturn = 0, size, response, valid;
@@ -405,7 +405,7 @@ Retorno (int)
     VOID_AUX_STRUCTURE - estrutura auxiliar vazia
     Um número int > 0 correpondente a quantidade de elementos preenchidos da estrutura
 */
-int getCountElementsAuxiliaryStructure(int position)
+int getQuantidadeElementosEstruturaAuxiliar(int position)
 {
 
 int functionReturn = 0, response, valid;
@@ -434,7 +434,7 @@ Retorno (No*)
     NULL, caso não tenha nenhum número nas listas
     No*, ponteiro para o início da lista com cabeçote
 */
-No *createLinkedListWithHead()
+No *montarListaEncadeadaComCabecote()
 {
 
     return NULL;
@@ -444,7 +444,7 @@ No *createLinkedListWithHead()
 Objetivo: retorna os números da lista enceada com cabeçote armazenando em vetorAux.
 Retorno void
 */
-void getDataLinkedList(No *inicio, int vetorAux[])
+void getDadosListaEncadeadaComCabecote(No *inicio, int vetorAux[])
 {
 }
 
@@ -454,7 +454,7 @@ O ponteiro inicio deve ficar com NULL.
 Retorno 
     void.
 */
-void deleteAllLinkedList(No **inicio)
+void destruirListaEncadeadaComCabecote(No **inicio)
 {
 }
 
@@ -462,7 +462,7 @@ void deleteAllLinkedList(No **inicio)
 Objetivo: inicializa o programa. deve ser chamado ao inicio do programa 
 */
 
-void initialize()
+void inicializar()
 {
 }
 
@@ -471,6 +471,6 @@ Objetivo: finaliza o programa. deve ser chamado ao final do programa
 para poder liberar todos os espaços de memória das estruturas auxiliares.
 */
 
-void ends()
+void finalizar()
 {
 }

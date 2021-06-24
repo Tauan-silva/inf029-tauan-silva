@@ -11,6 +11,7 @@
    #define TAM 10  
 
      typedef struct{
+         
 	int *assistant;
     int numbersElements;
     int operator;	
@@ -23,22 +24,22 @@
         struct reg *prox;
     } No;
 
-    int setAuxiliaryStructure(int posicao, int tamanho);
-    int insertnumberInStructure(int posicao, int valor);
-    int deleteNumberOfEndStructure(int posicao);
-    int deleteNumberToStructure(int posicao, int valor);
-    int getDataAuxiliaryStructure(int posicao, int vetorAux[]);
-    int getOrderDataOfAuxiliaryStructure(int posicao, int vetorAux[]);
-    int getDataOfAllAuxiliaryStructures(int vetorAux[]);
-    int getOrderDataOfAllAuxiliaryStructures(int vetorAux[]);
-    int changeSizeAuxiliaryStructure(int posicao, int novoTamanho);
-    int getCountElementsAuxiliaryStructure(int posicao);
-    No *createLinkedListWithHead();
-    void getDataLinkedList(No *inicio, int vetorAux[]);
-    void deleteAllLinkedList(No **inicio);
+    int criarEstruturaAuxiliar(int posicao, int tamanho);
+    int inserirNumeroEmEstrutura(int posicao, int valor);
+    int excluirNumeroDoFinaldaEstrutura(int posicao);
+    int excluirNumeroEspecificoDeEstrutura(int posicao, int valor);
+    int getDadosEstruturaAuxiliar(int posicao, int vetorAux[]);
+    int getDadosOrdenadosEstruturaAuxiliar(int posicao, int vetorAux[]);
+    int getDadosDeTodasEstruturasAuxiliares(int vetorAux[]);
+    int getDadosOrdenadosDeTodasEstruturasAuxiliares(int vetorAux[]);
+    int modificarTamanhoEstruturaAuxiliar(int posicao, int novoTamanho);
+    int getQuantidadeElementosEstruturaAuxiliar(int posicao);
+    No *montarListaEncadeadaComCabecote();
+    void getDadosListaEncadeadaComCabecote(No *inicio, int vetorAux[]);
+    void destruirListaEncadeadaComCabecote(No **inicio);
 
-    void initialize();
-    void ends();
-    void duplicate(int *x);
+    void inicializar();
+    void finalizar();
+    void dobrar(int *x);
 
     #endif  // TRABALHO2_ESTRUTURAVETORES_H
